@@ -8,6 +8,7 @@ import ConsultaEstoquePage from '../pages/ConsultaEstoquePage';
 import MovimentacoesPage from '../pages/MovimentacoesPage';
 import FornecedoresPage from '../pages/FornecedoresPage';
 import EditarUsuarioPage from '../pages/EditarUsuarioPage';
+import ConsultaUsuariosPage from '../pages/ConsultaUsuariosPage';
 import { produtoService } from '../services/produtoService';
 import { movimentacaoService } from '../services/movimentacaoService';
 import { usuarioService } from '../services/usuarioService';
@@ -133,6 +134,8 @@ const AppRoutes = () => {
         <Route path="/movimentacoes" element={<MovimentacoesPage />} />
         
         {/* Rotas de Usuários */}
+        <Route path="/usuarios" element={<ConsultaUsuariosPage />} />
+
         <Route
           path="/editar-usuario/:id"
           element={
